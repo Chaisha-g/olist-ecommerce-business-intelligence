@@ -1,119 +1,248 @@
-Olist E-Commerce | Sales & Business Intelligence Analysis
+# Olist E-Commerce | SQL & Tableau Business Intelligence
 
-SQL | Tableau | Data Analytics | Business Intelligence
+### End-to-End Data Analytics Portfolio Project 2
 
-Project Overview
+## Project Overview
 
-This project analyzes the Olist Brazilian E-Commerce Public Dataset to explore sales performance, customer behavior, revenue trends, and geographic purchasing patterns.
+Analyzed historical Brazilian e-commerce transactions from the **Olist Brazilian E-Commerce Public Dataset** to explore revenue performance, customer purchasing behavior, product category performance, seller contributions, and geographic sales distribution.
 
-Using MySQL for data exploration and analysis and Tableau for interactive visualization, I developed a business intelligence dashboard to transform transactional e-commerce data into actionable business insights.
+This project demonstrates an end-to-end data analytics workflow using **MySQL for data preparation and analysis and Tableau for interactive business intelligence visualization**.
 
-The project focuses on understanding revenue drivers, customer retention, product performance, and opportunities for business improvement.
+**Tools:** MySQL | MySQL Workbench | Tableau | GitHub
 
-Business Objectives
+**Dataset:** Olist Brazilian E-Commerce Public Dataset (2016–2018)
 
-* Analyze overall sales and revenue performance.
-* Identify top-performing product categories and sellers.
-* Evaluate customer purchasing behavior and repeat purchase rates.
-* Examine monthly revenue trends and growth.
-* Identify geographic markets contributing the most revenue.
-* Explore customer satisfaction and delivery performance.
-* Present key performance indicators through an interactive dashboard.
+**Project Type:** Data Cleaning, Data Validation, Exploratory Data Analysis (EDA), Customer Analytics, Revenue Analysis, Business Intelligence & Data Visualization
 
-Tools & Technologies
+---
 
-MySQL: Data exploration, cleaning, validation, joins, aggregations, and business analysis.
+## Interactive Tableau Dashboard
 
-MySQL Workbench: SQL query development and database management.
+**Dashboard:** Olist E-Commerce | Sales & Business Intelligence Dashboard
 
-Tableau Public: Interactive dashboard development, KPI visualization, and business intelligence reporting.
+The interactive Tableau dashboard includes five key performance indicators:
 
-GitHub: Project documentation and portfolio presentation.
+1. Total Orders
+2. Total Revenue
+3. Total Customers
+4. Average Order Value
+5. Repeat Customer Rate
 
-Dataset
+The dashboard also includes five business visualizations:
 
-Source: Olist Brazilian E-Commerce Public Dataset (Kaggle)
+1. Monthly Revenue Trend
+2. Top 10 Product Categories
+3. Revenue by Customer State
+4. Top 10 Sellers by Revenue
+5. Top 10 Customer Cities by Revenue
 
-The dataset contains historical Brazilian e-commerce transactions, including orders, customers, products, sellers, payments, reviews, and delivery information.
+The dashboard allows users to explore historical e-commerce performance through interactive visualizations.
 
-Nine related datasets were imported into MySQL to support relational analysis.
+**[Explore the Interactive Tableau Dashboard](PASTE_YOUR_TABLEAU_PUBLIC_LINK_HERE)**
 
-Key Performance Indicators
+---
 
-Metric	Result
-Total Orders	96,478
-Total Revenue	R$13.22M
-Total Customers	93,358
-Average Order Value	R$137.04
-Repeat Customer Rate	3.00%
+## Business Questions
 
-Revenue represents merchandise sales value rather than net profit.
+This project addresses eight key analytical questions:
 
-SQL Analysis
+1. How much revenue did the marketplace generate during the analyzed period?
+2. How did monthly revenue change over time?
+3. Which product categories contributed the most revenue?
+4. Which sellers generated the highest merchandise sales?
+5. Which Brazilian states and cities contributed the most revenue?
+6. What was the average order value?
+7. What percentage of customers made repeat purchases?
+8. How did delivery performance and customer satisfaction vary across orders?
 
-The SQL analysis explores several business questions:
+---
 
-1. Which product categories generate the highest revenue?
-2. Who are the top-performing sellers?
-3. How does revenue change month over month?
-4. Which Brazilian states and cities contribute the most revenue?
-5. What percentage of customers make repeat purchases?
-6. How do delivery times relate to customer satisfaction?
-7. Which payment methods are most frequently used?
-8. How are customer review scores distributed?
+## Data Analytics Workflow
 
-SQL techniques include:
+### 1. Data Import | MySQL
 
-* Multi-table joins
-* Common Table Expressions (CTEs)
-* Aggregate functions
-* Window functions
-* Conditional logic
-* Date-based analysis
-* Data validation and quality checks
+Imported the Olist e-commerce dataset into a relational MySQL database.
 
-Tableau Dashboard
+The database contains nine related tables covering orders, customers, products, sellers, payments, reviews, and geographic information.
 
-Dashboard: Olist E-Commerce | Sales & Business Intelligence Dashboard
+**Database:** `olist_business_intelligence`
 
-The interactive dashboard includes:
+### 2. Data Profiling | SQL
 
-* Five business performance KPI cards
-* Monthly Revenue Trend
-* Top 10 Product Categories by Revenue
-* Revenue by Customer State
-* Top 10 Sellers by Revenue
-* Top 10 Customer Cities by Revenue
+Examined the dataset to understand its structure, record counts, relationships, and potential data quality issues.
 
-Interactive Dashboard: View on Tableau Public
+Performed validation checks across the imported tables to identify missing records and inconsistencies.
 
-Key Business Insights
+### 3. Data Cleaning & Validation | SQL
 
-The analysis highlights several important patterns:
+Prepared the dataset for business analysis by reviewing data completeness and relational consistency.
 
-* Revenue increased substantially during the main growth period represented in the dataset.
-* A relatively small proportion of customers made repeat purchases.
-* Revenue contributions differ considerably across product categories and geographic markets.
-* Sales performance varies across individual sellers.
-* Customer purchasing activity is concentrated in certain Brazilian states.
+Identified **611 missing product records** during validation and restored them to the products table.
 
-These findings provide opportunities to investigate customer retention, market expansion, seller performance, and revenue optimization.
+Verified the corrected dataset before continuing with analytical queries.
 
-Project Structure
+### 4. Exploratory Data Analysis | SQL
 
-* README.md — Project overview, methodology, and findings.
-* Olist_Ecommerce_Business_Analysis.sql — SQL queries used for business analysis.
-* dashboard.png — Tableau dashboard screenshot (to be added).
+Analyzed revenue trends, product categories, seller performance, geographic distribution, and customer purchasing behavior.
 
-Future Improvements
+Developed SQL queries using joins, aggregations, conditional logic, common table expressions, and window functions.
 
-* Develop additional customer segmentation analyses.
-* Investigate customer retention and purchasing frequency.
-* Explore relationships between delivery performance and customer satisfaction.
-* Extend the dashboard with additional business performance indicators.
+### 5. Business Insights | SQL
 
-Author
+Developed analytical queries to evaluate:
 
-Created as an independent data analytics and business intelligence portfolio project.
+- Monthly revenue growth
+- Average order value
+- Customer retention
+- Product category revenue contribution
+- Seller performance
+- Geographic revenue distribution
+- Payment methods
+- Delivery performance
+- Customer satisfaction
 
-Skills Demonstrated: SQL, MySQL, Data Cleaning, Data Analysis, Business Intelligence, Tableau, Data Visualization, and Analytical Problem-Solving.
+**SQL Script:** `Olist_Ecommerce_Business_Analysis.sql`
+
+### 6. Interactive Visualization | Tableau
+
+Developed a Tableau business intelligence dashboard containing five executive KPIs and five analytical visualizations.
+
+The dashboard communicates key findings through revenue trends, geographic comparisons, product performance, seller contributions, and customer metrics.
+
+---
+
+## Key Findings
+
+### 1. Total Revenue Reached R$13.22 Million
+
+| Business Metric | Result |
+|---|---:|
+| Total Orders | 96,478 |
+| Total Revenue | R$13.22M |
+| Total Customers | 93,358 |
+| Average Order Value | R$137.04 |
+| Repeat Customer Rate | 3.00% |
+
+**Insight:** The analyzed marketplace transactions generated approximately **R$13.22 million in merchandise revenue**, with an average order value of **R$137.04**.
+
+### 2. Revenue Increased Over Time
+
+Monthly revenue generally increased throughout the main operating period represented in the dataset.
+
+The monthly revenue visualization highlights substantial growth during 2017 and continued strong sales activity during much of 2018.
+
+**Insight:** The marketplace experienced significant historical revenue growth, although monthly performance fluctuated.
+
+### 3. Health & Beauty Was a Leading Product Category
+
+The highest revenue-generating product categories included:
+
+| Product Category |
+|---|
+| Health & Beauty |
+| Watches & Gifts |
+| Bed, Bath & Table |
+| Sports & Leisure |
+| Computers & Accessories |
+
+**Insight:** Revenue was concentrated across several major product categories, with Health & Beauty and Watches & Gifts among the strongest contributors.
+
+### 4. Customer Retention Was Approximately 3%
+
+| Customer Metric | Result |
+|---|---:|
+| Total Customers | 93,358 |
+| Repeat Customer Rate | 3.00% |
+
+**Insight:** Approximately **3% of customers** made repeat purchases in the analyzed dataset, suggesting that most customers purchased only once during the observed period.
+
+### 5. São Paulo Was a Major Revenue Contributor
+
+Geographic analysis revealed substantial differences in revenue across Brazilian states.
+
+São Paulo (SP) generated the highest merchandise revenue among the states represented in the dashboard.
+
+**Insight:** Geographic revenue concentration highlights the importance of major regional markets to marketplace performance.
+
+### 6. Seller Revenue Varied Significantly
+
+Analysis of the top 10 sellers identified differences in revenue contributions across marketplace sellers.
+
+**Insight:** Seller-level performance analysis can help identify high-performing sellers and opportunities for further marketplace evaluation.
+
+---
+
+## Repository Structure
+
+| File | Description |
+|---|---|
+| `Olist_Ecommerce_Business_Analysis.sql` | SQL data validation, exploratory analysis, and business intelligence queries |
+| `README.md` | Project overview, methodology, findings, and documentation |
+| `dashboard.png` | Tableau business intelligence dashboard screenshot |
+
+---
+
+## Technical Skills Demonstrated
+
+### SQL & MySQL
+
+- Relational database management
+- Data importing and querying
+- Data profiling and validation
+- Data cleaning and quality assessment
+- Multi-table joins
+- Common table expressions (CTEs)
+- Window functions
+- Aggregate functions
+- Revenue and customer analysis
+- Business-focused analytical queries
+
+### Tableau
+
+- Interactive dashboard development
+- KPI creation
+- Calculated fields
+- Time-series visualization
+- Revenue trend analysis
+- Geographic performance visualization
+- Product and seller comparisons
+- Business intelligence reporting
+
+### Business Analytics
+
+- Revenue performance evaluation
+- Customer retention analysis
+- Average order value calculation
+- Product category performance
+- Seller performance analysis
+- Geographic market analysis
+- Translating data into business insights
+
+### GitHub
+
+- Version control
+- Project documentation
+- Portfolio presentation
+
+---
+
+## Project Limitations
+
+- This project analyzes historical e-commerce transactions from **2016–2018**, not current marketplace performance.
+- Revenue represents merchandise sales value and should not be interpreted as net profit.
+- The first and last months of the dataset may contain incomplete transaction periods.
+- Customer retention calculations reflect purchasing behavior within the available historical dataset.
+- Findings are based on the available transaction records and may not represent the marketplace's complete business operations.
+- Geographic analysis reflects customer locations recorded in the dataset.
+
+---
+
+## Conclusion
+
+This project demonstrates a structured, end-to-end data analytics workflow, transforming historical e-commerce transaction data into meaningful business insights using **MySQL and Tableau**.
+
+The analysis highlights revenue growth, customer retention, product category performance, seller contributions, and geographic sales patterns.
+
+By combining SQL-based analysis with interactive business intelligence visualization, the project demonstrates practical skills in data preparation, analytical problem-solving, KPI development, and communicating business performance.
+
+**[Explore the Interactive Tableau Dashboard](PASTE_YOUR_TABLEAU_PUBLIC_LINK_HERE)**
