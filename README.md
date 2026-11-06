@@ -38,6 +38,9 @@ The dashboard also includes five business visualizations:
 
 The dashboard allows users to explore historical e-commerce performance through interactive visualizations.
 
+<img width="2798" height="3798" alt="Olist E-Commerce _ Business Performance" src="https://github.com/user-attachments/assets/b9edd534-0d6b-48f0-8ae5-9f5b5e6bc7c0" />
+
+
 **[📊 Explore the Interactive Tableau Dashboard](https://public.tableau.com/app/profile/chaisha.gallage/viz/OlistE-CommerceRevenueIntelligenceCustomerAnalyticsBusinessPerformancePortfolioProject2/OlistE-CommerceBusinessPerformance)**
 
 ## Business Questions
